@@ -1,6 +1,6 @@
 ## Data Pipeline with Databricks
 ### By Tursunai Turumbekova
-([![CI](https://github.com/nogibjj/Databricks_Data_Pipeline/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/Databricks_Data_Pipeline/actions/workflows/cicd.yml))
+[![CI](https://github.com/nogibjj/Dockerized_Application_Tursunai/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/Dockerized_Application_Tursunai/actions/workflows/cicd.yml)
 
 This project builds upon an earlier PySpark implementation to leverage the Databricks ecosystem. It demonstrates the creation and execution of a Databricks pipeline using PySpark for managing and analyzing datasets. The primary focus of this project is on extracting, transforming, and diving into urbanization metrics data from FiveThirtyEight, utilizing Databricks APIs and Python libraries.
 
@@ -30,6 +30,26 @@ This project builds upon an earlier PySpark implementation to leverage the Datab
 6. **Automated Job Trigger via GitHub Push**
    - Configures a GitHub workflow to trigger a job run in the Databricks workspace whenever new commits are pushed to the repository.
 
+## Dockerized Application
+----------------------
+
+This project also includes a Dockerized implementation of the pipeline for local development and deployment. The Docker image can be found on Docker Hub.
+
+### Docker Image
+
+The Docker image for this project is available on Docker Hub:spark-python-app.
+
+### Running the Docker Container Locally
+
+To run the pipeline using Docker, follow these steps:
+
+``` bash
+docker pull /spark-python-app:latest
+```    
+```bash
+docker run -it --rm /spark-python-app:latest
+```
+![Docker](img/docker.png)
 ## Project Components
 
 ### Environment Setup
