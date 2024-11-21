@@ -31,7 +31,6 @@ This project builds upon an earlier PySpark implementation to leverage the Datab
    - Configures a GitHub workflow to trigger a job run in the Databricks workspace whenever new commits are pushed to the repository.
 
 ## Dockerized Application
-----------------------
 
 This project also includes a Dockerized implementation of the pipeline for local development and deployment. The Docker image can be found on Docker Hub.
 
