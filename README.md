@@ -36,7 +36,7 @@ This project also includes a Dockerized implementation of the pipeline for local
 
 ### Docker Image
 
-The Docker image for this project is available on Docker Hub:spark-python-app.
+The Docker image for this project is available on Docker Hub: https://hub.docker.com/repository/docker/tursunait/spark-python-app/general .
 
 ### Running the Docker Container Locally
 
