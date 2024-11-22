@@ -43,4 +43,4 @@ COPY repeat.sh /app
 EXPOSE 4040 8080 7077
 
 # Set command to run Python script
-CMD ["su", "codespace", "-c", "/home/codespace/venv/bin/python", "main.py"]
+CMD ["/home/codespace/venv/bin/python", "main.py"]

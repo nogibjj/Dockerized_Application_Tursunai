@@ -38,7 +38,7 @@ docker-push: docker-build
 
 # Deploy target
 deploy: docker-build docker-push
-	docker run -it --rm -p 8080:8080 tursunait/spark-python-app:latest
+	docker run --rm -p 8080:8080 tursunait/spark-python-app:latest
 
 # Run all steps (install, lint, test, format, deploy)
 all: install lint test format deploy
