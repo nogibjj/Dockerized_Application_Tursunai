@@ -4,7 +4,6 @@
 
 This project builds upon an earlier PySpark implementation to leverage the Databricks ecosystem. It demonstrates the creation and execution of a Databricks pipeline using PySpark for managing and analyzing datasets. The primary focus of this project is on extracting, transforming, and diving into urbanization metrics data from FiveThirtyEight, utilizing Databricks APIs and Python libraries.
 
-[Demo video](https://youtu.be/afhGBaAZU-A)
 ## Key Features
 
 1. **Data Extraction**
