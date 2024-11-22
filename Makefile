@@ -11,7 +11,6 @@ test:
 unittest:
 	python -m unittest discover -s . -p "test_*.py"
 
-
 # Format code with black
 format:
 	black *.py mylib/*.py
@@ -30,13 +29,21 @@ container-lint:
 # Refactor: run format and lint
 refactor: format lint
 
-# Deploy target (implementation needed)
-deploy:
-	# deploy goes here
+# Docker build and push
+docker-build:
+	docker build -t tursunait/spark-python-app:latest .
+
+docker-push: docker-build
+	docker push tursunait/spark-python-app:latest
+
+# Deploy target
+deploy: docker-build docker-push
+	docker run -it --rm -p 8080:8080 tursunait/spark-python-app:latest
 
 # Run all steps (install, lint, test, format, deploy)
 all: install lint test format deploy
 
+# ETL workflow
 extract:
 	python main.py extract
 
